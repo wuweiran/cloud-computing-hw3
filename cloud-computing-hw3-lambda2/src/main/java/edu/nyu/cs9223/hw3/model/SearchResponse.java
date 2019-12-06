@@ -1,5 +1,6 @@
 package edu.nyu.cs9223.hw3.model;
 
+import edu.nyu.cs9223.hw3.search.PhotoResult;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,5 +17,5 @@ import java.util.List;
 public class SearchResponse implements Serializable, Cloneable {
     private boolean success;
     private String errorMessage;
-    private List<String> matched;
+    private List<PhotoResult> matched;
 }
